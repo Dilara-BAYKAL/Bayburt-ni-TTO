@@ -1,0 +1,105 @@
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f8f8f8;
+    color: #332222;
+}
+
+header {
+    background: #1c2b39;
+    color: white;
+    padding: 15px 40px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar .logo {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.navbar nav a {
+    color: white;
+    margin-left: 15px;
+    text-decoration: none;
+    background-color: #4ea2b2;
+    padding: 6px 12px;
+    border-radius: 4px;
+}
+
+.profile {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px;
+    background: white;
+}
+
+.profile-text {
+    max-width: 60%;
+}
+
+.profile-text h1 {
+    font-size: 28px;
+    color: #040709;
+}
+
+.profile-text h3 {
+    color: #175255;
+    margin-top: 8px;
+}
+
+.profile-text p {
+    margin-top: 10px;
+    line-height: 1.6;
+}
+
+.profile-image img {
+    width: 150px;
+    border-radius: 10px;
+}
+
+.portfolio {
+    background: #f1f1f1;
+    padding: 40px;
+    text-align: center;
+}
+
+.portfolio h2 {
+    font-size: 24px;
+    color: #2c3e50;
+    margin-bottom: 30px;
+}
+
+.projects {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.project-card {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    width: 220px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.project-card img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+footer {
+    background: #1c2b39;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}

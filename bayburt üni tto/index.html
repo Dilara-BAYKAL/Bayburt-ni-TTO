@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bayburt Üniversitesi TTO</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f9f9f9;
+      color: #333;
+      scroll-behavior: smooth; /* CSS ile yumuşak kaydırma */
+    }
+    header {
+      background: #004080;
+      color: #fff;
+      padding: 15px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 22px;
+    }
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    .hero {
+      background: url('https://images.unsplash.com/photo-1531482615713-2afd69097998') center/cover no-repeat;
+      height: 400px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      text-align: center;
+    }
+    .hero h2 {
+      background: rgba(0,0,0,0.5);
+      padding: 20px;
+      border-radius: 10px;
+      font-size: 32px;
+    }
+    section {
+      padding: 60px 40px;
+      max-width: 1100px;
+      margin: auto;
+    }
+    section h2 {
+      text-align: center;
+      margin-bottom: 30px;
+      color: #004080;
+    }
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+    .card {
+      background: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+    footer {
+      background: #004080;
+      color: #fff;
+      text-align: center;
+      padding: 20px;
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      max-width: 500px;
+      margin: auto;
+    }
+    form input, form textarea {
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    form button {
+      padding: 12px;
+      background: #004080;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+    form button:hover {
+      background: #0066cc;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Bayburt Üniversitesi TTO</h1>
+    <nav>
+      <a href="#misyon">Misyon & Vizyon</a>
+      <a href="#hizmetler">Hizmetler</a>
+      <a href="#iletisim">İletişim</a>
+    </nav>
+  </header>
+
+  <div class="hero">
+    <h2>Bilgiyi İnovasyona Dönüştüren Köprü</h2>
+  </div>
+
+  <section id="misyon">
+    <h2>Misyon & Vizyon</h2>
+    <div class="cards">
+      <div class="card">
+        <h3>Misyon</h3>
+        <p>Üniversite bilgi birikimini sanayiye aktarmak, yenilikçi projeleri desteklemek ve girişimciliği teşvik etmek.</p>
+      </div>
+      <div class="card">
+        <h3>Vizyon</h3>
+        <p>Bölgesel ve ulusal ölçekte inovasyonun öncüsü, iş dünyasıyla güçlü bağlar kuran bir teknoloji transfer merkezi olmak.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="hizmetler">
+    <h2>Hizmetlerimiz</h2>
+    <div class="cards">
+      <div class="card">
+        <h3>Proje Destek</h3>
+        <p>Akademisyenler ve sanayi için araştırma projelerinin geliştirilmesi ve fonlanması.</p>
+      </div>
+      <div class="card">
+        <h3>Patent & Lisanslama</h3>
+        <p>Fikri mülkiyet haklarının korunması ve lisanslama süreçlerinin yönetimi.</p>
+      </div>
+      <div class="card">
+        <h3>Girişimcilik</h3>
+        <p>Öğrenciler ve araştırmacılar için girişimcilik eğitimleri ve mentorluk hizmetleri.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="iletisim">
+    <h2>İletişim</h2>
+    <form>
+      <input type="text" placeholder="Adınız Soyadınız" required>
+      <input type="email" placeholder="E-posta" required>
+      <textarea rows="5" placeholder="Mesajınız" required></textarea>
+      <button type="submit">Gönder</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Bayburt Üniversitesi TTO. Tüm hakları saklıdır.</p>
+  </footer>
+
+  <script>
+    // JavaScript ile ekstra yumuşak kaydırma (opsiyonel)
+    document.querySelectorAll('nav a').forEach(link => {
+      link.addEventListener('click', function(e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+          behavior: 'smooth'
+        });
+      });
+    });
+  </script>
+
+</body>
+</html>
